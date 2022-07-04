@@ -1,0 +1,94 @@
+.PacCrush {
+    margin: auto;
+    position: relative;
+    text-align: center;
+    width: 600px;
+    height: 900px;
+}
+
+.PacCrush_iframe {
+    margin: auto;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    border: 0px;
+}
+
+@media screen and (max-height: 1050px) {
+    .PacCrush {
+        width: 507px;
+        height: 760px;
+    }
+}
+
+@media screen and (max-height: 910px) {
+    .PacCrush {
+        width: 400px;
+        height: 600px;
+    }
+}
+
+@media screen and (max-height: 750px) {
+    .PacCrush {
+        width: 340px;
+        height: 510px;
+    }
+}
+
+@media screen and (max-width: 690px) {
+    .PacCrush {
+        width: 470px;
+        height: 705px;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .PacCrush {
+        width: 377px;
+        height: 566px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .PacCrush {
+        width: 305px;
+        height: 457px;
+    }
+}
+
+@media screen and (max-width: 410px) {
+    .PacCrush {
+        width: 230px;
+        height: 345px;
+    }
+}
+
+
+.PacCrush.PacCrush__fullscreen {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.PacCrush.PacCrush__fullscreen .PacCrush_iframe {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.PacCrush_fullScreenButton {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    user-select: none;
+}
+
+.PacCrush_fullScreenButton:hover {
+    cursor: pointer;
+}

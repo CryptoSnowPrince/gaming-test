@@ -1,0 +1,87 @@
+.Sidebar {
+    position: relative;
+    background: #261E35;
+    box-shadow: inset -1.5px 0px 0px rgba(255, 255, 255, 0.15);
+    height: 100%;
+}
+
+.Sidebar_logo {
+    text-align: center;
+    padding-top: 42px;
+    margin-bottom: 50px;
+}
+
+.Sidebar_logo_img {
+    display: block;
+    margin: auto;
+}
+
+.Sidebar_menu {
+    text-align: center;
+}
+
+.Sidebar_menu_button {
+    width: 61px;
+    height: 60px;
+    border-radius: 13px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+    margin: auto;
+}
+
+.Sidebar_menu_button:hover,
+.Sidebar_menu_button.Sidebar__enabled {
+    background: #372C44;
+}
+
+.Sidebar_menu_button__acount {
+    display: none;
+}
+
+.Sidebar_menu_button_img {
+    margin: auto;
+}
+
+.Sidebar_logoutButton {
+    position: absolute;
+    left: 70px;
+    bottom: 40px;
+    width: 61px;
+    height: 60px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+    margin: auto;
+    border-radius: 13px;
+}
+
+.Sidebar_logoutButton:hover {
+    background: #372C44;
+}
+
+@media screen and (max-width: 1350px) {
+    .Sidebar_menu_button {
+        width: 25px;
+    }
+
+    .Sidebar_menu_button_img {
+        width: 22px !important;
+    }
+
+    .Sidebar_logo {
+        display: none;
+        margin-left: 50px;
+    }
+
+    .Sidebar_logoutButton {
+        width: 25px;
+        left: 5px;
+    }
+
+    .Sidebar_menu_button__acount .Sidebar_menu_button_img {
+        filter: brightness(0) invert(1);
+    }
+}

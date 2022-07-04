@@ -1,0 +1,234 @@
+.towerboxgameparent {
+    position: relative;
+    padding: 30px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.bg-image-tower {
+    background-image: url(../../../public/images/towerbox/bg-image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.towerboxgameparent:before {
+    background: linear-gradient(180deg, #8DFFFF 0%, #FF8412 100%);
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.towerboxgame-heading {
+    text-align: center;
+    width: fit-content;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.towerboxgame-heading:before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50px;
+    transform: translate(-50%, -50%);
+    width: 412px;
+    height: 152px;
+    background-image: url(../../../public/images/towerbox/heading-bg.png);
+    z-index: -1;
+}
+
+.bg-image-heading-gameover:before {
+    background-image: url(../../../public/images/towerbox/heading-bg-gameover.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.towerboxlevelsparent {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    margin: 80px 0;
+}
+
+.towerboxlevels {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px;
+}
+
+.towerboxlevels button {
+    width: fit-content;
+    margin: 0 auto;
+    transform: translateY(-25px);
+    padding: 5px 32px;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: none;
+    border-bottom: 4px solid #4ec307;
+    background: #67EB00;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 0px 4px white;
+    cursor: pointer;
+}
+
+.towerbox-goback {
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap;
+    align-items: center;
+    gap: 15px;
+}
+
+.towerbox-goback p {
+    margin: 0;
+}
+
+.towerbox-goback button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: wrap;
+    padding: 0px 15px;
+    background: #E1E1E1;
+    border: none;
+    border-bottom: 4px solid #BDBDBD;
+    border-radius: 5px;
+    box-shadow: 0 0 0px 5px white;
+    padding-left: 0;
+    gap: 10px;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.towerbox-goback button span {
+    background: white;
+    display: block;
+    display: flex;
+    padding: 7px 0;
+}
+
+
+/*  */
+
+.after-gradient {
+    position: relative;
+}
+
+.after-gradient:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, #693F00 0%, #030181 100%);
+    z-index: -1;
+}
+
+.towerboxgamegameover {
+    margin: 45px 0;
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 30px;
+}
+
+.gameOverDiv {
+    max-width: 420px;
+    margin: 50px auto;
+    background: white;
+    text-align: center;
+    position: relative;
+    padding: 25px;
+    border-radius: 30px;
+}
+
+
+.gameOverText {
+    width: 211px;
+    margin: 0 auto;
+    background: linear-gradient(180deg, #A4D9FF 0%, #5036ED 100%);
+    color: white;
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 12px;
+    padding: 5px 0;
+}
+
+.gameOverText h6 {
+    margin: 0;
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: center;
+    text-shadow: 0px 3px #240db2;
+}
+
+.gameOverscore p {
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #FF7360;
+    margin: 30px 0 0;
+}
+
+.gameOverscore > div {
+    background: #FFEECD;
+    width: fit-content;
+    min-width: 151px;
+    padding: 10px;
+    font-family: Poppins;
+    font-size: 28px;
+    font-weight: 800;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 52px;
+    color: #FF753A;
+}
+
+.gameOverButtonsSubmit {
+    margin: 35px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.gameOverButtonsSubmit button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+    background: transparent;
+    border: none;
+    width: fit-content;
+    padding: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.gameOverButtonsSubmit button:hover {
+    opacity: 0.8;
+}
+
+.gameOverButtonsSubmit button:last-child {
+    margin-right: 0;
+}
+
+.towerBoxSection * {
+    font-family: 'poppins';
+}

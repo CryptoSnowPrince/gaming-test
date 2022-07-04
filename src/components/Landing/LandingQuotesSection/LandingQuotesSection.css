@@ -1,0 +1,240 @@
+.LandingQuotesSection {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    color: white;
+    text-align: center;
+}
+
+.LandingQuotesSection_title1 {
+    margin-top: 140px;
+    font-family: Bebas Neue;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 2px;
+}
+
+.LandingQuotesSection_title2 {
+    font-family: Bebas Neue;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 80px;
+    line-height: 96px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-top: 15px;
+}
+
+.LandingQuotesSection_sides {
+    text-align: left;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+.LandingQuotesSection_sides_left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+}
+
+.LandingQuotesSection_sides_left_title1 {
+    font-family: Bebas Neue;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.LandingQuotesSection_sides_left_title2 {
+    font-family: Bebas Neue;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 80px;
+    line-height: 96px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.LandingQuotesSection_sides_left_title2_button {
+    position: absolute;
+    right: 50px;
+    bottom: 20px;
+}
+
+.LandingQuotesSection_sides_left_desc {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    margin-top: 20px;
+    width: 80%;
+}
+
+.LandingQuotesSection_sides_left_more {
+    margin-top: 50px;
+}
+
+.LandingQuotesSection_sides_right {
+    width: 50%;
+    height: 100%;
+    position: relative;
+}
+
+.LandingQuotesSection_tweetBox {
+    background: rgba(0, 0, 0, 0.72);
+    border-radius: 10px;
+    width: 452px;
+    padding: 25px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.LandingQuotesSection_tweetBox_header {
+    display: flex;
+    flex-direction: row;
+}
+
+.LandingQuotesSection_tweetBox_header_left {
+    display: flex;
+}
+
+.LandingQuotesSection_tweetBox_avatar {
+    background: #FFB548;
+    border-radius: 100%;
+}
+
+.LandingQuotesSection_tweetBox_avatar_box {
+    width: 65px;
+    height: 65px;
+    position: relative;
+    border-radius: 100%;
+    overflow: hidden;
+    left: -5px;
+    top: -5px;
+}
+
+.LandingQuotesSection_tweetBox_header_name {
+    margin-top: 5px;
+    margin-left: 20px;
+    font-family: Bebas Neue;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 2px;
+    color: #FFB548;
+}
+
+.LandingQuotesSection_tweetBox_header_userName {
+    margin-left: 20px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: justify;
+    color: #FFFFFF;
+    opacity: 0.5;
+}
+
+.LandingQuotesSection_tweetBox_twIcon {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    padding: 15px;
+    font-size: 25px;
+    opacity: 0.5;
+}
+
+.LandingQuotesSection_tweetBox_text {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    margin-top: 20px;
+}
+
+.LandingQuotesSection_tweetBox_date {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 900px) {
+    .LandingQuotesSection_sides_left {
+        width: auto;
+    }
+
+    .LandingQuotesSection_sides {
+        display: block;
+    }
+    
+    .LandingQuotesSection_sides_left {
+        display: block;
+        height: auto;
+    }
+    
+    .LandingQuotesSection_sides_right {
+        display: block;
+    }
+
+    .LandingQuotesSection_sides_left_title1 {
+        margin-top: 15px;
+        text-align: center;
+    }
+    
+    .LandingQuotesSection_sides_left_title2 {
+        text-align: center;
+        font-size: 50px;
+        line-height: 53px;
+    }
+
+    .LandingQuotesSection_sides_left_desc {
+        display: none;
+    }
+
+    .LandingQuotesSection_sides_left_more {
+        display: none;
+    }
+
+    .LandingQuotesSection_sides_right {
+        display: block;
+        height: auto;
+        width: auto;
+    }
+
+    .LandingQuotesSection_tweetBox {
+        margin: auto !important;
+        max-width: 90%;
+        width: 400px;
+        margin-top: 10px !important;
+        padding: 12px;
+    }
+
+    .LandingQuotesSection_tweetBox_text {
+        margin-top: 10px;
+    }
+
+    .LandingQuotesSection_tweetBox_avatar_box {
+        width: 55px;
+        height: 55px;
+    }
+}

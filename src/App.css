@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Bebas+Neue&family=Changa&family=Open+Sans:wght@400;700&family=Poppins&display=swap');
+
+@import url('../src/thirdparty/icofont/icofont.css');
+
+body {
+    overflow: hidden;
+}
+
+.mainWidth {
+    width: 1146px;
+}
+
+.button1,
+.button1:visited {
+    color: white;
+    background: linear-gradient(194.68deg, #FFB548 11.27%, #FAFF00 90.4%);
+    border-radius: 4px;
+    height: 50px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Open Sans;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    padding: 0px 40px;
+    cursor: pointer;
+    text-shadow: 0px 0px 10px rgb(0 0 0 / 20%);
+    transition: all 250ms;
+    text-decoration: none;
+}
+
+.button1:hover {
+    background: linear-gradient(194.68deg, #ffab30 11.27%, #feffdd 90.4%);
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+.button2,
+.button1button2 {
+    color: white;
+    background: linear-gradient(194.68deg, #00B6C1 11.27%, #087A81 90.4%);
+    border-radius: 4px;
+    height: 50px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Open Sans;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    padding: 0px 40px;
+    cursor: pointer;
+    text-shadow: 0px 0px 10px rgb(0 0 0 / 20%);
+    transition: all 250ms;
+    text-decoration: none;
+}
+
+.button2:hover {
+    background: linear-gradient(194.68deg, #19d6e1 11.27%, #118b93 90.4%);
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+#connect-wallet {
+    background-color: #ffc000;
+    color: #fff;
+    border: none;
+    outline: none;
+    padding: 10px 24px;
+    border-radius: 50px;
+}
+
+#disconnect-wallet {
+    background-color: #00B6C1;
+    color: #fff;
+    border: none;
+    outline: none;
+    padding: 10px 24px;
+    border-radius: 50px;
+}
+
+@media screen and (max-width: 1350px) {
+    .mainWidth {
+        width: auto;
+        box-sizing: border-box;
+    }
+}

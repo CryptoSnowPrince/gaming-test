@@ -1,0 +1,180 @@
+.LandingFeaturesSection {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.LandingFeaturesSection_list {
+    position: absolute;
+    width: 40%;
+    right: 0px;
+    text-align: left;
+}
+
+.LandingFeaturesSection_list_title1 {
+    font-family: Bebas Neue;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 2px;
+    color: #FFFFFF;
+    margin-bottom: 8px;
+}
+
+.LandingFeaturesSection_list_title2 {
+    font-family: Bebas Neue;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 80px;
+    line-height: 96px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #00B6C1;
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.75);
+    margin-bottom: 40px;
+}
+
+.LandingFeaturesSection_list_items {
+    
+}
+
+.LandingFeaturesSection_list_items_item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 35px;
+    position: relative;
+}
+
+.LandingFeaturesSection_list_items_item_title {
+    font-family: Bebas Neue;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 43px;
+    letter-spacing: 2px;
+    color: #00B6C1;
+    margin-bottom: 8px;
+    text-shadow: 0px 0px 10px rgb(255 255 255 / 75%);
+    cursor: pointer;
+    transition: color 250ms;
+}
+
+.LandingFeaturesSection_list_items_item_title:hover {
+    color: #ff0093;
+}
+
+.LandingFeaturesSection_list_items_item_desc {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: justify;
+    color: #FFFFFF;
+    width: 70%;
+    display: none;
+    animation: LandingFeaturesSection_listItemDescAnim 500ms;
+}
+
+.LandingFeaturesSection_list_items_item.LandingFeaturesSection__current .LandingFeaturesSection_list_items_item_title {
+    color: #ff0093;
+}
+
+.LandingFeaturesSection_list_items_item.LandingFeaturesSection__current .LandingFeaturesSection_list_items_item_desc {
+    display: block;
+}
+
+@keyframes LandingFeaturesSection_listItemDescAnim {
+    0% {
+        transform: scaleY(0) rotate3d(0, 1, 1, 10deg);
+    }
+    
+    100% {
+        transform: scaleY(0) rotate3d(0, 0, 0, 0deg);
+        transform: scaleY(1);
+    }
+}
+
+.LandingFeaturesSection_list_items_item_indicator {
+    position: absolute;
+    left: -40px;
+    top: 12px;
+    height: 100%;
+}
+
+.LandingFeaturesSection_list_items_item_indicator_point {
+    width: 12px;
+    height: 12px;
+    border: 2px solid white;
+    border-radius: 100%;
+    content: ' ';
+    transition: background 500ms;
+}
+
+.LandingFeaturesSection_list_items_item.LandingFeaturesSection__passed .LandingFeaturesSection_list_items_item_indicator_point {
+    background: white;
+}
+
+.LandingFeaturesSection_list_items_item_indicator_line {
+    position: absolute;
+    left: 7.2px;
+    top: 3px;
+    content: ' ';
+    height: calc(100% + 34px);
+    width: 2px;
+    background: white;
+    display: none;
+    animation: LandingFeaturesSection_listItemLineAnim 500ms;
+}
+
+.LandingFeaturesSection_list_items_item.LandingFeaturesSection__passed .LandingFeaturesSection_list_items_item_indicator_line {
+    display: block;
+}
+
+@keyframes LandingFeaturesSection_listItemLineAnim {
+    0% {
+        transform: scaleY(0) translateY(-50%);
+    }
+    
+    100% {
+        transform: scaleY(1) translateY(0%);
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .LandingFeaturesSection {
+        position: relative;
+        background: rgba(0, 0, 0, 0.5);
+    }
+    
+    .LandingFeaturesSection_list {
+        position: relative;
+        width: 65%;
+        margin-top: 30px;
+    }
+
+    .LandingFeaturesSection_list_title1 {
+        text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.5);
+    }
+
+    .LandingFeaturesSection_list_title2 {
+        text-shadow: 0px 0px 10px rgb(255 255 255 / 75%), 2px 2px 0px rgb(255 255 255 / 75%);
+        margin-bottom: 10px;
+    }
+    
+    .LandingFeaturesSection_list_items_item_title {
+        text-shadow: 0px 0px 10px rgb(255 255 255 / 75%), 2px 2px 0px rgb(255 255 255 / 75%)
+    }
+
+    .LandingFeaturesSection_list_items_item_desc {
+        width: auto;
+    }
+}

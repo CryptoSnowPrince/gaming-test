@@ -1,0 +1,229 @@
+.LandingAboutSection {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.LandingAboutSection_slider {
+    width: 89%;
+    height: 600px;
+    position: relative;
+}
+
+.LandingAboutSection_slider_left {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 50%;
+    height: 100%;
+    z-index: 2500;
+    text-align: left;
+}
+
+.LandingAboutSection_slider_left_items {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.LandingAboutSection_slider_left_items_item {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    display: none;
+    background: rgb(0 0 0 / 75%);
+    animation: LandingAboutSection_leftSwitchAnim 750ms;
+}
+
+.LandingAboutSection_slider_left_items_item.LandingAboutSection__current {
+    display: block;
+}
+
+.LandingAboutSection_slider_right {
+    position: absolute;
+    top: 0px;
+    right: 1px;
+    width: 50%;
+    height: 100%;
+}
+
+.LandingAboutSection_slider_right_items {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.LandingAboutSection_slider_right_items_item {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    display: none;
+    animation: LandingAboutSection_rightSwitchAnim 750ms;
+}
+
+.LandingAboutSection_slider_right_items_item_image {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.LandingAboutSection_slider_right_items_item_image_img {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 100%;
+}
+
+.LandingAboutSection_slider_right_items_item.LandingAboutSection__current {
+    display: block;
+}
+
+.LandingAboutSection_slider_right_items_item_title1 {
+    font-family: Bebas Neue;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 2px;
+    padding: 25px;
+    padding-bottom: 10px;
+}
+
+.LandingAboutSection_slider_right_items_item_title2 {
+    font-family: Bebas Neue;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 80px;
+    line-height: 96px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    padding: 25px;
+    padding-top: 10px;
+}
+
+.LandingAboutSection_slider_right_items_item_desc {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 24px;
+    text-align: justify;
+    position: absolute;
+    bottom: 100px;
+    right: 50px;
+    width: 65%;
+}
+
+@keyframes LandingAboutSection_leftSwitchAnim {
+    0% {
+        opacity: 0;
+        transform: translateY(120px);
+    }
+    
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes LandingAboutSection_rightSwitchAnim {
+    0% {
+        opacity: 0;
+        transform: translateY(-120px);
+    }
+    
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.LandingAboutSection_slider_switcher {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 3000;
+}
+
+.LandingAboutSection_slider_switcher_items {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.LandingAboutSection_slider_switcher_items_item {
+    height: 30px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+
+.LandingAboutSection_slider_switcher_items_item_icon {
+    margin: auto;
+    width: 10px;
+    height: 10px;
+    background: white;
+    border-radius: 100%;
+    cursor: pointer;
+    transition: background 250ms;
+}
+
+.LandingAboutSection_slider_switcher_items_item:hover .LandingAboutSection_slider_switcher_items_item_icon {
+    background: #ffab30;
+}
+
+.LandingAboutSection_slider_switcher_items_item.LandingAboutSection__current .LandingAboutSection_slider_switcher_items_item_icon {
+    background: #ffab30;
+}
+
+@media screen and (max-width: 900px) {
+    .LandingAboutSection_slider_left {
+        position: relative;
+        width: auto;
+        height: auto;
+    }
+    
+    .LandingAboutSection_slider_right {
+        position: relative;
+        width: auto;
+    }
+
+    .LandingAboutSection_slider_right_items_item_title2 {
+        padding: 15px;
+    }
+    
+    .LandingAboutSection_slider_right_items_item_title2 {
+        font-size: 60px;
+        line-height: 65px;
+        padding: 15px;
+    }
+
+    .LandingAboutSection_slider_right_items_item_desc {
+        position: static;
+        margin-top: 10px;
+        width: auto;
+        line-height: 30px;
+        padding: 0px 15px;
+        font-size: 22px;
+    }
+}

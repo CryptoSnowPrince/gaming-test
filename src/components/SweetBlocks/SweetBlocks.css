@@ -1,0 +1,93 @@
+.SweetBlocks {
+    position: relative;
+    text-align: center;
+    margin: auto;
+    width: 600px;
+    height: 800px;
+}
+
+.SweetBlocks_iframe {
+    margin: auto;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    border: 0px;
+}
+
+@media screen and (max-height: 1050px) {
+    .SweetBlocks {
+        height: 757px;
+        width: 567px;
+    }
+}
+
+@media screen and (max-height: 910px) {
+    .SweetBlocks {
+        width: 450px;
+        height: 600px;
+    }
+}
+
+@media screen and (max-height: 750px) {
+    .SweetBlocks {
+        width: 383px;
+        height: 510px;
+    }
+}
+
+@media screen and (max-width: 690px) {
+    .SweetBlocks {
+        width: 470px;
+        height: 627px;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .SweetBlocks {
+        width: 377px;
+        height: 503px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .SweetBlocks {
+        width: 305px;
+        height: 407px;
+    }
+}
+
+@media screen and (max-width: 410px) {
+    .SweetBlocks {
+        width: 230px;
+        height: 307px;
+    }
+}
+
+.SweetBlocks.SweetBlocks__fullscreen {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.SweetBlocks.SweetBlocks__fullscreen .SweetBlocks_iframe {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.SweetBlocks_fullScreenButton {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    user-select: none;
+}
+
+.SweetBlocks_fullScreenButton:hover {
+    cursor: pointer;
+}
